@@ -1344,6 +1344,7 @@ m.key[pSLEEP] = function(n,z)
     --TODO fade out screen then run the shutdown script
     m.sleep = true
     menu.redraw()
+    cleanup()
     norns.state.save() 
     if tape.mode == tREC then tape_stop_rec() end
     norns.audio.output_level(-100)
